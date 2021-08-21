@@ -13,7 +13,7 @@ const NewsStack = ({ navigation }) => {
     <Stack.Navigator>
       <Stack.Screen
         options={{
-          headerTitle: props => <NewsTitle isHome={true} navigationDrawer={navigation} title={'Bağlamalar'} {...props} />,
+          headerTitle: props => <NewsTitle isHome={true} navigationDrawer={navigation} title={'Xəbərlər'} {...props} />,
           headerStyle: {
             backgroundColor: colors.bg_2,
           },
