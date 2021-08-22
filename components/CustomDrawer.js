@@ -11,16 +11,13 @@ import {
   DrawerItem,
   DrawerItemList
 } from '@react-navigation/drawer';
-
-import Icon from 'react-native-vector-icons/Ionicons';
 import IconMaterialCom from 'react-native-vector-icons/MaterialCommunityIcons';
-import IconMaterial from 'react-native-vector-icons/MaterialIcons';
-import IconFont5 from 'react-native-vector-icons/FontAwesome5';
-import IconFont from 'react-native-vector-icons/FontAwesome';
-import IconAnt from 'react-native-vector-icons/AntDesign';
+import { logout } from '../features/user/userSlice';
+import { useDispatch } from 'react-redux';
 
 const CustomDrawer = (props) => {
   const paperTheme = useTheme();
+  const dispatch = useDispatch()
   return (
     <View style={{ flex: 1 }}>
       <DrawerContentScrollView
@@ -55,8 +52,8 @@ const CustomDrawer = (props) => {
             color: '#7c7c7c',
             fontSize: 16,
           }}
-          label="Sign Out"
-          onPress={() => { console.log('Sign out') }}
+          label="Çıxış"
+          onPress={() => dispatch(logout())}
         />
       </Drawer.Section>
     </View>

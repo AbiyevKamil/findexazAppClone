@@ -1,8 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native'
+import { useDispatch } from 'react-redux'
+import { login } from '../features/user/userSlice'
 // import SvgFindex from '../shared/svgFindex'
 
 const Login = ({ navigation }) => {
+  const dispatch = useDispatch()
   return (
     <View style={styles.container}>
       <Image
@@ -12,7 +15,7 @@ const Login = ({ navigation }) => {
       <TextInput style={styles.input} placeholder="E-mail" />
       <TextInput style={styles.input} placeholder="Şifrə" />
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Daxil ol</Text>
+        <Text onPress={() => dispatch(login())} style={styles.buttonText}>Daxil ol</Text>
       </TouchableOpacity>
       <View style={styles.suggestRegisterContainer}>
         <Text style={styles.suggestRegisterText}>

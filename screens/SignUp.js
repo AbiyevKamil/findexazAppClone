@@ -126,7 +126,7 @@ const SignUp = ({ navigation }) => {
         <TextInput style={styles.input} placeholder="Ünvan" />
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Şifrə" />
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Təkrar şifrə" />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')} style={styles.button}>
           <Text style={styles.buttonText}>Təsdiqlə</Text>
         </TouchableOpacity>
         <View style={styles.suggestRegisterContainer}>
