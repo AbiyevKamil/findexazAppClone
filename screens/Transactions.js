@@ -77,8 +77,8 @@ const Transactions = ({ navigation }) => {
   }, [])
 
   return (
-    <View>
-      <ScrollView style={{ padding: 10, backgroundColor: colors.bg_2 }}>
+    <View style={{ flex: 1, backgroundColor: colors.bg_2 }}>
+      <ScrollView style={{ padding: 10, backgroundColor: colors.bg_2, flex: 1 }}>
         <FlatList
           data={transactions}
           renderItem={info => (

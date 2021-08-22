@@ -4,9 +4,9 @@
     "slug": "findexazAppClone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/findex-whitebg.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/findex.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kamilabiyev.findexazAppClone"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/findex-croppped.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.kamilabiyev.findexazAppClone"
     },
     "web": {
       "favicon": "./assets/favicon.png"
