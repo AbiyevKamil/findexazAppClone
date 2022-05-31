@@ -9,14 +9,14 @@ const Balance = () => {
         <Text style={styles.header}>TRY balans artır</Text>
         <TextInput style={styles.input} keyboardType={'number-pad'} placeholder={'Məbləğ'} />
         <TouchableOpacity style={styles.btn}>
-          <Text style={styles.btnText}>QR kodu skan et</Text>
+          <Text style={styles.btnText}>Balansı artır</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.item}>
         <Text style={styles.header}>USD balans artır</Text>
         <TextInput style={styles.input} keyboardType={'number-pad'} placeholder={'Məbləğ'} />
         <TouchableOpacity style={styles.btn}>
-          <Text style={styles.btnText}>QR kodu skan et</Text>
+          <Text style={styles.btnText}>Balansı artır</Text>
         </TouchableOpacity>
       </View>
     </View>
